@@ -66,4 +66,11 @@
   <ItemGroup>
     <RefactorLog Include="DBS_NetNinja.refactorlog" />
   </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Script_PostDeployment.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Script_NinjaTestData.sql" />
+    <None Include="Script_EquipmentTestData.sql" />
+  </ItemGroup>
 </Project>
