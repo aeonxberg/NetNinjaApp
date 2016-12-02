@@ -1,0 +1,9 @@
+E:\School\Avans\Blok 5\Programmeren 5\NetNinjaApp\DBS_NetNinja\bin\Debug\DBS_NetNinja.dacpac
+E:\School\Avans\Blok 5\Programmeren 5\NetNinjaApp\DBS_NetNinja\bin\Debug\DBS_NetNinja.dll
+E:\School\Avans\Blok 5\Programmeren 5\NetNinjaApp\DBS_NetNinja\bin\Debug\DBS_NetNinja.pdb
+E:\School\Avans\Blok 5\Programmeren 5\NetNinjaApp\DBS_NetNinja\obj\Debug\DBS_NetNinja.dll
+E:\School\Avans\Blok 5\Programmeren 5\NetNinjaApp\DBS_NetNinja\obj\Debug\DBS_NetNinja.pdb
+E:\School\Avans\Blok 5\Programmeren 5\NetNinjaApp\DBS_NetNinja\obj\Debug\Model.xml
+E:\School\Avans\Blok 5\Programmeren 5\NetNinjaApp\DBS_NetNinja\obj\Debug\refactor.xml
+E:\School\Avans\Blok 5\Programmeren 5\NetNinjaApp\DBS_NetNinja\obj\Debug\postdeploy.sql
+E:\School\Avans\Blok 5\Programmeren 5\NetNinjaApp\DBS_NetNinja\obj\Debug\predeploy.sql
