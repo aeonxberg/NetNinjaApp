@@ -9,3 +9,6 @@ Post-Deployment Script Template
                SELECT * FROM [$(TableName)]					
 --------------------------------------------------------------------------------------
 */
+
+:r .\Script_NinjaTestData.sql
+:r .\Script_EquipmentTestData.sql
