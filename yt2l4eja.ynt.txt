@@ -1,0 +1,48 @@
+﻿
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch Database
+# Your branch is up-to-date with 'origin/Database'.
+#
+# Changes to be committed:
+#	modified:   .vs/NetNinjaApp/v14/.suo
+#
+# Untracked files:
+#	DBS_NetNinja/DBS_NetNinja.dbmdl
+#	DBS_NetNinja/DBS_NetNinja.jfm
+#	DBS_NetNinja/obj/Debug/postdeploy.sql
+#	NetNinjaApp/C__RefactorLog.cs
+#	NetNinjaApp/DataModel.Context.cs
+#	NetNinjaApp/DataModel.Context.tt
+#	NetNinjaApp/DataModel.Designer.cs
+#	NetNinjaApp/DataModel.cs
+#	NetNinjaApp/DataModel.edmx
+#	NetNinjaApp/DataModel.edmx.diagram
+#	NetNinjaApp/DataModel.tt
+#	NetNinjaApp/Equipment.cs
+#	NetNinjaApp/Ninja.cs
+#	NetNinjaApp/bin/Debug/EntityFramework.SqlServer.dll
+#	NetNinjaApp/bin/Debug/EntityFramework.SqlServer.xml
+#	NetNinjaApp/bin/Debug/EntityFramework.dll
+#	NetNinjaApp/bin/Debug/EntityFramework.xml
+#	NetNinjaApp/bin/Debug/NetNinjaApp.exe
+#	NetNinjaApp/bin/Debug/NetNinjaApp.pdb
+#	NetNinjaApp/obj/Debug/App.g.cs
+#	NetNinjaApp/obj/Debug/MainWindow.baml
+#	NetNinjaApp/obj/Debug/MainWindow.g.cs
+#	NetNinjaApp/obj/Debug/NetNinjaApp.Properties.Resources.resources
+#	NetNinjaApp/obj/Debug/NetNinjaApp.csproj.GenerateResource.Cache
+#	NetNinjaApp/obj/Debug/NetNinjaApp.csprojResolveAssemblyReference.cache
+#	NetNinjaApp/obj/Debug/NetNinjaApp.exe
+#	NetNinjaApp/obj/Debug/NetNinjaApp.g.resources
+#	NetNinjaApp/obj/Debug/NetNinjaApp.pdb
+#	NetNinjaApp/obj/Debug/NetNinjaApp_Content.g.cs
+#	NetNinjaApp/obj/Debug/NetNinjaApp_Content.g.i.cs
+#	NetNinjaApp/obj/Debug/NetNinjaApp_MarkupCompile.cache
+#	NetNinjaApp/obj/Debug/NetNinjaApp_MarkupCompile.lref
+#	NetNinjaApp/obj/Debug/TempPE/
+#	NetNinjaApp/obj/Debug/edmxResourcesToEmbed/
+#	NetNinjaApp/packages.config
+#	packages/
+#
+
