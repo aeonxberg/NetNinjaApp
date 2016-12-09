@@ -1,0 +1,21 @@
+﻿<Window x:Class="NetNinjaApp.View.NinjaCreateWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NetNinjaApp.View"
+        mc:Ignorable="d"
+        Title="NinjaCreateWindow" Height="450" Width="350" ResizeMode="NoResize"
+        DataContext="{Binding CreateNinjaViewModel, Source={StaticResource Locator}}">
+
+    <Grid>
+        <Label x:Name="NinjaName" Content="Name:" HorizontalAlignment="Left" Margin="10,18,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="NinjaNameBox"  Text="{Binding NinjaName}" HorizontalAlignment="Center" Height="23" Margin="0,21,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208"/>
+        <Button x:Name ="UpLoadBtn" HorizontalAlignment="Center" Width="90" Margin="0,49,0,331" Click="LoadBtn_Click">Upload Image</Button>
+        <Border BorderBrush="Black" BorderThickness="1" Height="206" VerticalAlignment="Top" Margin="10,94,10,0">
+            <Image x:Name="Image" Source="{Binding Image}" Margin="9.2,-0.8,8.4,-0.4"/>
+        </Border>
+        <Button x:Name="SaveNinjaBtn" Command="{Binding SaveNinjaCommand}" Content="Save" HorizontalAlignment="Center" Margin="0,326,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="BackBtn" Command="{Binding BackCommand}" Content="Back" HorizontalAlignment="Center" Margin="0,367,0,0" VerticalAlignment="Top" Width="75"/>
+    </Grid>
+</Window>

@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:NetNinjaApp"
         mc:Ignorable="d"
-        Title="NetNinjaApp" Height="350" Width="400">
+        Title="NetNinjaApp" Height="350" Width="400"
+        DataContext="{Binding MainViewModel, Source={StaticResource Locator}}">
     <Grid>
         <Label x:Name="Title" Content="Select Your Ninja or Create a New Ninja!" HorizontalAlignment="Center" Margin="0,25,0,0" VerticalAlignment="Top"/>
         <Label x:Name="SelectLabel" Content="- Select a Ninja -" HorizontalAlignment="Center" Margin="0,97,0,0" VerticalAlignment="Top"/>
@@ -22,7 +23,7 @@
             </GridSplitter.RenderTransform>
         </GridSplitter>
         <Label x:Name="CreateLabel" Content="- Create a Ninja -" HorizontalAlignment="Center" Margin="148,223,144.6,0" VerticalAlignment="Top"/>
-        <Button x:Name="CreateButton" Content="Create!" HorizontalAlignment="Center" Margin="0,268,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="CreateButton" Command="{Binding ShowCreateNinjaCommand}" Content="Create!" HorizontalAlignment="Center" Margin="0,268,0,0" VerticalAlignment="Top" Width="75"/>
         <GridSplitter x:Name="TitleSplitter" HorizontalAlignment="Left" Height="380" Margin="195,-133,0,0" VerticalAlignment="Top" Width="3" RenderTransformOrigin="0.5,0.5">
             <GridSplitter.RenderTransform>
                 <TransformGroup>

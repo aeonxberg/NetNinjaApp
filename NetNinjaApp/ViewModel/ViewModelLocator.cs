@@ -41,18 +41,17 @@ namespace NetNinjaApp.ViewModel
             ////    // Create run time view services and models
             ////    SimpleIoc.Default.Register<IDataService, DataService>();
             ////}
-
+         
+            //Register Views Here
             SimpleIoc.Default.Register<MainViewModel>();
+            SimpleIoc.Default.Register<CreateNinjaViewModel>();
         }
 
-        public MainViewModel Main
-        {
-            get
-            {
-                return ServiceLocator.Current.GetInstance<MainViewModel>();
-            }
-        }
-        
+        //Use Expression Body for GetInstances of ServiceLocator
+
+        public MainViewModel MainViewModel => ServiceLocator.Current.GetInstance<MainViewModel>();
+        public CreateNinjaViewModel CreateNinjaViewModel => new CreateNinjaViewModel();
+
         public static void Cleanup()
         {
             // TODO Clear the ViewModels

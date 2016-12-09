@@ -1,4 +1,8 @@
+using System.Windows;
+using System.Windows.Input;
 using GalaSoft.MvvmLight;
+using GalaSoft.MvvmLight.CommandWpf;
+using NetNinjaApp.View;
 
 namespace NetNinjaApp.ViewModel
 {
@@ -19,6 +23,8 @@ namespace NetNinjaApp.ViewModel
         /// <summary>
         /// Initializes a new instance of the MainViewModel class.
         /// </summary>
+        public ICommand ShowCreateNinjaCommand { get; private set; }
+
         public MainViewModel()
         {
             ////if (IsInDesignMode)
@@ -29,6 +35,15 @@ namespace NetNinjaApp.ViewModel
             ////{
             ////    // Code runs "for real"
             ////}
+            ShowCreateNinjaCommand = new RelayCommand(ShowCreateNinja);
+        }
+
+        public void ShowCreateNinja()
+        {
+            NinjaCreateWindow NCW = new NinjaCreateWindow();
+            NCW.Show();
+            Application.Current.Windows[0].Close();
+ 
         }
     }
 }
