@@ -42,17 +42,24 @@ namespace NetNinjaApp.ViewModel
         private void SaveNinjaMethod()
         {
             bool succeeded = true;
-            if (NinjaName != null && ImageUrl != null)
+            Byte[] ImageBytesTemp = null;
+            if (Image != null)
+            {
+                ImageBytesTemp = ConvertImageToByteArray(Image);
+            }
+            if (NinjaName != null)
             {
 
-                NinjaModel n = new NinjaModel();
-                n.Name = NinjaName;
-                n.ImageBytes = ConvertImageToByteArray(Image);
+                NinjaModel n = new NinjaModel
+                {
+                    Name = NinjaName,
+                    ImageBytes = ImageBytesTemp,
+                    Agility = 0,
+                    Intelligence = 0,
+                    Strength = 0,
+                    Gold = Math.Abs(new Random().Next(100, 10000))
+                };
                 //n.ImageURL = ImageUrl;
-                n.Agility = 0;
-                n.Intelligence = 0;
-                n.Strength = 0;
-                n.Gold = Math.Abs(new Random().Next(100, 10000));
 
                 if (_ninjaList != null || _ninjaList.Count > 0)
                 {
@@ -65,7 +72,7 @@ namespace NetNinjaApp.ViewModel
                         }
                     }
                 }
-                if (succeeded == true)
+                if (succeeded)
                 {/* TODO:Save Ninja To DATABASE
                     using (var context = new NetNinjas.NetNinjaDatabaseEntities())
                     {

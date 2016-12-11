@@ -79,6 +79,7 @@
     <Compile Include="Model\NinjaModel.cs" />
     <Compile Include="ViewModel\CreateNinjaViewModel.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
+    <Compile Include="ViewModel\StoreViewModel.cs" />
     <Compile Include="ViewModel\ViewModelLocator.cs" />
     <Compile Include="View\NinjaCreateWindow.xaml.cs">
       <DependentUpon>NinjaCreateWindow.xaml</DependentUpon>

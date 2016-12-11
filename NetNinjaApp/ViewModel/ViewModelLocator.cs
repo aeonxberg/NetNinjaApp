@@ -45,12 +45,14 @@ namespace NetNinjaApp.ViewModel
             //Register Views Here
             SimpleIoc.Default.Register<MainViewModel>();
             SimpleIoc.Default.Register<CreateNinjaViewModel>();
+            SimpleIoc.Default.Register<StoreViewModel>();
         }
 
         //Use Expression Body for GetInstances of ServiceLocator
 
         public MainViewModel MainViewModel => ServiceLocator.Current.GetInstance<MainViewModel>();
         public CreateNinjaViewModel CreateNinjaViewModel => new CreateNinjaViewModel();
+        public StoreViewModel StoreViewModel => new StoreViewModel();
 
         public static void Cleanup()
         {

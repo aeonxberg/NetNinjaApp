@@ -13,7 +13,7 @@
         <TextBox x:Name="NinjaNameBox"  Text="{Binding NinjaName}" HorizontalAlignment="Center" Height="23" Margin="0,21,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208"/>
         <Button x:Name ="UpLoadBtn" HorizontalAlignment="Center" Width="90" Margin="0,49,0,331" Click="LoadBtn_Click">Upload Image</Button>
         <Border BorderBrush="Black" BorderThickness="1" Height="206" VerticalAlignment="Top" Margin="10,94,10,0">
-            <Image x:Name="Image" Source="{Binding Image}" Margin="9.2,-0.8,8.4,-0.4"/>
+            <Image x:Name="Image" Source="{Binding Image, UpdateSourceTrigger=PropertyChanged}" Margin="9.2,-0.8,8.4,-0.4"/>
         </Border>
         <Button x:Name="SaveNinjaBtn" Command="{Binding SaveNinjaCommand}" Content="Save" HorizontalAlignment="Center" Margin="0,326,0,0" VerticalAlignment="Top" Width="75"/>
         <Button x:Name="BackBtn" Command="{Binding BackCommand}" Content="Back" HorizontalAlignment="Center" Margin="0,367,0,0" VerticalAlignment="Top" Width="75"/>

@@ -5,8 +5,82 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:NetNinjaApp.View"
         mc:Ignorable="d"
-        Title="StoreWindow" Height="300" Width="300">
+        Title="StoreWindow" Height="400" Width="600" ResizeMode="NoResize"
+        DataContext="{Binding StoreViewModel, Source={StaticResource Locator}}">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20" ></RowDefinition>
+            <RowDefinition Height="0.5*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="20" ></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+            <ColumnDefinition Width="3*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+<!--        Show Buttons for Categories-->
+        <Border Margin="5,5,5,5" Grid.Column="0" Grid.Row="2" Grid.RowSpan="5" BorderBrush="Gray" BorderThickness="2,2,2,2"></Border>
         
+        <Button Grid.Row="2" Grid.Column="0" Margin="10,10,10,10">Head</Button>
+        <Button Grid.Row="3" Grid.Column="0" Margin="10,10,10,10">Shoulder</Button>
+        <Button Grid.Row="4" Grid.Column="0" Margin="10,10,10,10">Chest</Button>
+        <Button Grid.Row="5" Grid.Column="0" Margin="10,10,10,10">Pants</Button>
+        <Button Grid.Row="6" Grid.Column="0" Margin="10,10,10,10">Boots</Button>
+<!--        Show Store Items from Selected Category-->
+        <Border Margin="5,5,5,5" Grid.Column="1" Grid.Row="2" Grid.RowSpan="5" BorderBrush="Gray" BorderThickness="2,2,2,2">
+</Border>
+            <ListView Margin="10,10,10,10"  Grid.Row="2" Grid.Column="1" Grid.RowSpan="5" ItemsSource="{Binding SelectedNinjaStoreEqp}"></ListView>
+<!--        Show Selected Equipment Stats and such-->
+        <Grid Margin="2,2,2,2" Grid.Row="2" Grid.Column="2" Grid.RowSpan="5">
+            <Grid.RowDefinitions>
+<!--                Image-->
+                <RowDefinition Height="4*"></RowDefinition>
+<!--                Buffer-->
+                <RowDefinition Height="0.2*"></RowDefinition>
+<!--                ItemName-->
+                <RowDefinition Height="1*"></RowDefinition>
+<!--                Strength-->
+                <RowDefinition Height="1*"></RowDefinition>
+<!--                Intelligence-->
+                <RowDefinition Height="1*"></RowDefinition>
+<!--                Agility-->
+                <RowDefinition Height="1*"></RowDefinition>
+<!--                Gold-->
+                <RowDefinition Height="1*"></RowDefinition>
+<!--                Buffer-->
+                <RowDefinition Height="0.2*"></RowDefinition>
+<!--                Button-->
+                <RowDefinition Height="1*"></RowDefinition>
+<!--                Buffer-->
+                <RowDefinition Height="0.5*"></RowDefinition>
+
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"></ColumnDefinition>
+                <ColumnDefinition Width="2*"></ColumnDefinition>
+                <ColumnDefinition Width="1*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.Row="0" Grid.Column="1" BorderThickness="2,2,2,2" BorderBrush="Gray"></Border>
+            <Border Margin="2,2,5,5" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" Grid.RowSpan="8" BorderThickness="2,2,2,2" BorderBrush="Gray"></Border>
+            <Label Grid.Row="3" Grid.Column="0">Strength</Label>
+            <Label Grid.Row="4" Grid.Column="0">Intelligence</Label>
+            <Label Grid.Row="5" Grid.Column="0">Agility</Label>
+            <Label Grid.Row="6" Grid.Column="0">Gold</Label>
+            
+<!--            PlaceHolderValues || Bind these-->
+            <Label HorizontalAlignment="Center" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" Content="Name"></Label>
+            <Label HorizontalAlignment="Center" Grid.Row="3" Grid.Column="1" Content="50"></Label>
+            <Label HorizontalAlignment="Center" Grid.Row="4" Grid.Column="1" Content="50"></Label>
+            <Label HorizontalAlignment="Center" Grid.Row="5" Grid.Column="1" Content="50"></Label>
+            <Label HorizontalAlignment="Center" Grid.Row="6" Grid.Column="1" Content="50"></Label>
+<!--            Button-->
+            <Button Grid.Row="8" Grid.Column="1">Purchase</Button>
+        </Grid>
     </Grid>
 </Window>
